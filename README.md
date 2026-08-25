@@ -82,7 +82,7 @@ sequenceDiagram
 |---|---|---|
 | [`Airport_baggage_use_caase.drawio`](Airport_baggage_use_caase.drawio) | 🗺️ UML Use Case Diagram | Actors and use cases with `include`/`extend` relationships. Open in [draw.io](https://app.diagrams.net/). |
 | [`Requirements_Table.xlsx`](Requirements_Table.xlsx) | 📋 Requirements Table | Functional requirements with priority, acceptance criteria, and rationale. |
-| [`UseCase_Flow_FileLostBaggageClaim.rtf`](UseCase_Flow_FileLostBaggageClaim.rtf) | 📝 Use-Case Flow Spec | Main success scenario and alternate flow for "File Lost Baggage Claim". |
+| [`UseCase_Flow_FileLostBaggageClaim.docx`](UseCase_Flow_FileLostBaggageClaim.docx) | 📝 Use-Case Flow Spec | Main success scenario and alternate flow for "File Lost Baggage Claim". |
 | [`30_SE_Lab1_SE_Problem_Statements.pdf`](30_SE_Lab1_SE_Problem_Statements.pdf) | 📄 Problem Statement | Original Lab 1 assignment brief. |
 
 ---
