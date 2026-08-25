@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case Diagram" id="uc-diagram-1">
+    <mxGraphModel dx="1136" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=none;" value="Airport Lost Luggage Claim &amp; Tracking Portal" vertex="1">
+          <mxGeometry height="560" width="480" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uc01" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" value="&lt;br&gt;File Lost Baggage Claim" vertex="1">
+          <mxGeometry height="70" width="200" x="330" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uc02" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" value="Match Claim to Scan Logs" vertex="1">
+          <mxGeometry height="70" width="200" x="330" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uc03" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" value="Update Claim Status" vertex="1">
+          <mxGeometry height="70" width="200" x="330" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="uc04" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" value="&lt;br&gt;Notify Passenger" vertex="1">
+          <mxGeometry height="70" width="150" x="590" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uc05" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" value="Track Claim Status" vertex="1">
+          <mxGeometry height="70" width="200" x="330" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="uc06" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" value="Process Compensation" vertex="1">
+          <mxGeometry height="70" width="200" x="330" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="actorPassenger" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Passenger" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="actorAgent" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Baggage Service Agent" vertex="1">
+          <mxGeometry height="60" width="30" x="900" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="actorScanner" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Terminal Scanner System" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="actorPassenger" style="html=1;endArrow=none;" target="uc01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="actorPassenger" style="html=1;endArrow=none;" target="uc05">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="actorAgent" style="html=1;endArrow=none;" target="uc03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="actorScanner" style="html=1;endArrow=none;" target="uc02">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" edge="1" parent="1" source="uc01" style="html=1;dashed=1;endArrow=open;endFill=0;fontStyle=2;" target="uc02" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" edge="1" parent="1" source="uc01" style="html=1;dashed=1;endArrow=open;endFill=0;fontStyle=2;" target="uc04" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="uc06" style="html=1;dashed=1;endArrow=open;endFill=0;fontStyle=2;" target="uc03" value="&lt;&lt;extend&gt;&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
